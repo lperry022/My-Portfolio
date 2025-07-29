@@ -5,9 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-"build": "npx tailwindcss -i ./src/input.css -o ./public/output.css --minify",
-    "dev": "npx tailwindcss -i ./src/input.css -o ./public/output.css --watch",
-    "build:css": "tailwindcss -i ./src/input.css -o ./public/output.css --minify"
+    "build:css": "tailwindcss -i ./src/input.css -o ./public/output.css --minify",
+    "build": "tailwindcss -i ./src/input.css -o ./public/output.css --minify",
+    "dev": "tailwindcss -i ./src/input.css -o ./public/output.css --watch"
   },
   "repository": {
     "type": "git",
@@ -22,11 +22,7 @@
   "homepage": "https://github.com/lperry022/My-Portfolio#readme",
   "devDependencies": {
     "autoprefixer": "^10.4.21",
-    "postcss": "^8.5.6"
-  },
-  "dependencies": {
-    "bootstrap": "^5.3.7",
-    "tailwindcss": "^3.3.5"
-
+    "postcss": "^8.5.6",
+    "tailwindcss": "^3.4.17"
   }
 }
