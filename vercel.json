@@ -2,15 +2,24 @@
   "cleanUrls": true,
   "redirects": [
     {
-      "source": "/maintenance.html",
+      "source": "/",
       "destination": "/maintenance",
-      "permanent": true
-    }
-  ],
-  "rewrites": [
+      "permanent": false
+    },
+    {
+      "source": "/index",
+      "destination": "/maintenance",
+      "permanent": false
+    },
+    {
+      "source": "/index.html",
+      "destination": "/maintenance",
+      "permanent": false
+    },
     {
       "source": "/(.*)",
-      "destination": "/maintenance.html"
+      "destination": "/maintenance",
+      "permanent": false
     }
   ]
 }
