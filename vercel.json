@@ -1,40 +1,15 @@
 {
-    "builds": [
-        {
-            "src": "package.json",
-            "use": "@vercel/static-build",
-            "config": {
-                "distDir": "public"
-            }
-        }
-    ],
-    "routes": [
-        {
-            "src": "/(.*)",
-            "dest": "/index.html"
-        }
-    ],
-    "cleanUrls": true,
-    "redirects": [
-        {
-            "source": "/",
-            "destination": "/maintenance",
-            "permanent": false
-        },
-        {
-            "source": "/index",
-            "destination": "/maintenance",
-            "permanent": false
-        },
-        {
-            "source": "/index.html",
-            "destination": "/maintenance",
-            "permanent": false
-        },
-        {
-            "source": "/(.*)",
-            "destination": "/maintenance",
-            "permanent": false
-        }
-    ]
+  "builds": [
+    {
+      "src": "package.json",
+      "use": "@vercel/static-build",
+      "config": {
+        "distDir": "public"
+      }
+    }
+  ],
+  "routes": [
+    { "src": "/(.*)", "dest": "/index.html" }
+  ],
+  "buildCommand": "npm run build"
 }
