@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Under Maintenance</title>
-        <link
-            href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@743&display=swap"
-            rel="stylesheet" />
-        <link rel="stylesheet" href="/output.css" />
-        <style>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Under Maintenance</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@743&display=swap"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="output.css">
+    <style>
       body {
         background-color: #000000;
         color: #ffffff;
@@ -23,24 +23,24 @@
         overflow: hidden;
       }
     </style>
-    </head>
+  </head>
 
-    <body>
-        <!-- Glowing parallax background -->
-        <div id="parallax-glow"
-            class="pointer-events-none fixed top-0 left-0 w-[300px] h-[300px] rounded-full bg-[radial-gradient(circle,_#8b5cf6_0%,_transparent_60%)] blur-3xl opacity-30 z-0 transition-transform duration-300 ease-out">
-        </div>
+  <body>
+    <!-- Glowing parallax background -->
+    <div id="parallax-glow"
+      class="pointer-events-none fixed top-0 left-0 w-[300px] h-[300px] rounded-full bg-[radial-gradient(circle,_#8b5cf6_0%,_transparent_60%)] blur-3xl opacity-30 z-0 transition-transform duration-300 ease-out">
+    </div>
 
-        <div class="z-10 px-6">
-            <h1 class="text-4xl mb-4 font-bold">🛠 Site Under Maintenance</h1>
-            <p class="text-gray-400">Check back soon!</p>
-        </div>
+    <div class="z-10 px-6">
+      <h1 class="text-4xl mb-4 font-bold">🛠 Site Under Maintenance</h1>
+      <p class="text-gray-400">Check back soon!</p>
+    </div>
 
-        <script>
+    <script>
       const glow = document.getElementById('parallax-glow');
       document.addEventListener('mousemove', (e) => {
         glow.style.transform = `translate(${e.clientX - 150}px, ${e.clientY - 150}px)`;
       });
     </script>
-    </body>
+  </body>
 </html>
