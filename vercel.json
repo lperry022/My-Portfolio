@@ -4,5 +4,6 @@
       "source": "/(.*)",
       "destination": "/maintenance.html"
     }
-  ]
+  ],
+  "cleanUrls": true
 }
