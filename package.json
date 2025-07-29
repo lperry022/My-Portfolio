@@ -22,10 +22,11 @@
   "homepage": "https://github.com/lperry022/My-Portfolio#readme",
   "devDependencies": {
     "autoprefixer": "^10.4.21",
-    "postcss": "^8.5.6",
-    "tailwindcss": "^3.3.5"
+    "postcss": "^8.5.6"
   },
   "dependencies": {
-    "bootstrap": "^5.3.7"
+    "bootstrap": "^5.3.7",
+    "tailwindcss": "^3.3.5"
+
   }
 }
