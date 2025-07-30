@@ -3,20 +3,24 @@ import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-d
 import Entry from './pages/Entry';
 import Home from './pages/Home';
 import Maintenance from './pages/Maintenance';
+import MouseGlow from './components/MouseGlow';
 
 const App = () => {
   return (
-    <Router>
-      <Routes>
-        {/* Redirect root to /entry */}
-        <Route path="/" element={<Navigate to="/entry" replace />} />
+    <>
+      <MouseGlow />
+      <Router>
+        <Routes>
+          {/* Redirect root to /entry */}
+          <Route path="/" element={<Navigate to="/entry" replace />} />
 
-        {/* Routes */}
-        <Route path="/entry" element={<Entry />} />
-        <Route path="/home" element={<Home />} />
-        <Route path="/maintenance" element={<Maintenance />} />
-      </Routes>
-    </Router>
+          {/* Routes */}
+          <Route path="/entry" element={<Entry />} />
+          <Route path="/home" element={<Home />} />
+          <Route path="/maintenance" element={<Maintenance />} />
+        </Routes>
+      </Router>
+    </>
   );
 };
 
