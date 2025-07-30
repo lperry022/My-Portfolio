@@ -1,5 +1,5 @@
-// src/pages/Home.jsx
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 function Home() {
   return (
@@ -24,11 +24,11 @@ function Home() {
         </div>
 
         <div className="pt-6">
-          <a href="/">
+          <Link to="/entry">
             <button className="px-6 py-3 rounded-md font-medium bg-transparent border border-white text-white hover:text-purple-300 hover:border-purple-300 transition duration-300">
               ← Back to Entry
             </button>
-          </a>
+          </Link>
         </div>
       </main>
     </div>
