@@ -16,9 +16,9 @@ const GlowButton = () => {
     <Link to="/home" className="inline-block group">
       <button
         onMouseMove={handleMouseMove}
-        className="relative px-6 py-3 border border-red-500 text-red-500 font-monospace text-xs uppercase tracking-widest overflow-hidden rounded-none hover:text-purple-500 hover:border-purple-500 transition duration-300"
+        className="hover-target relative px-6 py-3 border border-white-500 text-white-500 font-monospace text-xs uppercase tracking-widest overflow-hidden rounded-none hover:text-purple-500 hover:border-purple-500 transition duration-300"
       >
-        {/* Glow Effect (hidden by default, visible on hover) */}
+        {/* Internal glow follows the pointer */}
         <span
           className="absolute w-32 h-32 bg-purple-500 opacity-0 group-hover:opacity-40 rounded-full blur-2xl pointer-events-none transition-all duration-300 ease-out"
           style={{
@@ -27,7 +27,7 @@ const GlowButton = () => {
           }}
         />
 
-        {/* Button Text */}
+        {/* Text */}
         <span className="relative z-10">Enter the System</span>
       </button>
     </Link>
